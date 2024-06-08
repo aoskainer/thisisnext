@@ -1,4 +1,4 @@
-import { fetchPokemon } from "@/app/_apiclient/pokeapi";
+import { fetchPokemon } from "@/_apiclient/pokeapi";
 
 export async function GET() {
   // 適当に時間かかる処理
