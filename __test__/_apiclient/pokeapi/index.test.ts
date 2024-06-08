@@ -1,4 +1,4 @@
-import { fetchPokemon } from "@/app/_apiclient/pokeapi"
+import { fetchPokemon } from "@/_apiclient/pokeapi"
 
 describe("fetchPokemon", () => {
   it("PokeAPIをフェッチして正しい値を返却する", async () => {
