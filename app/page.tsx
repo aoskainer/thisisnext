@@ -1,20 +1,20 @@
-import Link from "next/link";
+import { Header, Sidebar, Footer } from '@/components';
+import styles from '@/styles/App.module.css';
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Link
-        href="/pokemon"
-        className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-150 ease-in-out"
-      >
-        Server Side Rendering
-      </Link>
-      <Link
-        href="/pokemon2"
-        className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-150 ease-in-out"
-      >
-        Client Side Rendering
-      </Link>
-    </main>
+    <div className={styles.appContainer}>
+      <Header />
+      <div className={styles.mainContent}>
+        <Sidebar />
+        <div className={styles.contentContainer}>
+          <h1>Welcome to My Next.s Practice Dashboard</h1>
+          <p>This is the main content area.</p>
+        </div>
+      </div>
+      <Footer />
+    </div>
   );
-}
+};
+
+export default HomePage;

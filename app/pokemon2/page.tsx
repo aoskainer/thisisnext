@@ -1,6 +1,6 @@
 'use client';
 
-import { Pokemon } from '@/app/_types';
+import { Pokemon } from '@/types';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { Spinner } from "@nextui-org/spinner";

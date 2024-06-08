@@ -1,4 +1,4 @@
-import { fetchPokemon } from '@/app/_apiclient/pokeapi'
+import { fetchPokemon } from '@/_apiclient/pokeapi'
 import Image from 'next/image'
 
 export default async function Page() {
